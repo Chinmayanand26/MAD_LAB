@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.sample">
+    <!-- Declaring the required permissions -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo2"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo2"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".quizz.Result"
+            android:label="Result"
+            android:exported="false" />
+        <activity
+            android:name=".quizz.Quiz"
+            android:exported="false"
+            android:label="Quiz" />
+        <activity
+            android:name=".java_codes.Drag_Drop"
+            android:exported="false" />
+        <activity
+            android:name=".java_codes.SQLite"
+            android:exported="false"
+            android:label="DataBase" />
+        <activity
+            android:name=".java_codes.Login"
+            android:exported="false"
+            android:label="MyThemes"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".java_codes.Permissions"
+            android:exported="false"
+            android:label="Permissions" />
+        <activity
+            android:name=".java_codes.Adapter"
+            android:exported="false"
+            android:label="Spinner" />
+        <activity
+            android:name=".java_codes.Age_Calculator"
+            android:exported="false"
+            android:label="Age Calculator" />
+        <activity
+            android:name=".java_codes.Arithmetics"
+            android:exported="false"
+            android:label="Arithmetic Operations" />
+        <activity
+            android:name=".login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".home"
+            android:exported="false"
+            android:label="HOME" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".code"
+            android:exported="false"
+            android:label="Code"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".java_codes.Intents"
+            android:exported="false"
+            android:label="Intent" />
+        <activity
+            android:name=".java_codes.RadioButtons"
+            android:exported="false"
+            android:label="RadioButtons" />
+        <activity
+            android:name=".java_codes.AllLayouts"
+            android:exported="false"
+            android:label=" All Layouts" />
+        <activity
+            android:name=".java_codes.DatePicker_TimePicker"
+            android:label="Date Picker" />
+        <activity
+            android:name=".java_codes.Spinner"
+            android:exported="false"
+            android:label="Spinner" />
+        <activity android:name=".java_codes.Fragments" />
+        <activity
+            android:name=".java_codes.Checkbox"
+            android:label="CheckBox" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

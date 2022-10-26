@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:cardCornerRadius="30dp"
+        android:layout_alignParentTop="true"
+        >
+        <Button
+            android:id="@+id/android_back"
+android:onClick="onClick"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/arrow_left" />
+
+        <com.gauravk.bubblenavigation.BubbleNavigationLinearView
+            android:id="@+id/bubblenavigationbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000000"
+            android:orientation="horizontal"
+            >
+
+            <com.gauravk.bubblenavigation.BubbleToggleView
+
+                android:id="@+id/homefrag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:bt_active="true"
+                app:bt_colorActive="#9C27B0"
+                app:bt_colorInactive="#9C27B0"
+                app:bt_title="Home"
+                app:bt_icon="@drawable/arithmatic_icon"/>
+
+            <com.gauravk.bubblenavigation.BubbleToggleView
+                android:id="@+id/searchfrag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:bt_active="true"
+                app:bt_colorActive="#FF9800"
+                app:bt_colorInactive="#FF9800"
+                app:bt_title="Java Code"
+
+                app:bt_icon="@drawable/java_icon_2"/>
+
+
+
+            <com.gauravk.bubblenavigation.BubbleToggleView
+                android:id="@+id/profilefrag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:bt_active="true"
+                app:bt_colorActive="@color/colorAccent"
+                app:bt_colorInactive="@color/colorAccent"
+                app:bt_title="XML Code"
+                app:bt_icon="@drawable/xml_icon_2"/>
+
+        </com.gauravk.bubblenavigation.BubbleNavigationLinearView>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

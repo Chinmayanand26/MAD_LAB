@@ -1,0 +1,59 @@
+<resources>
+    <string-array name="level">
+        <item>Click   🔽</item>
+        <item>Doctor 👨🏻‍⚕️</item>
+        <item>Farmer 👨🏻‍🌾</item>
+        <item>Engineer 👨🏻‍🔬</item>
+        <item>Teacher 👨🏻‍🏫</item>
+        <item>Business 👨🏻‍💼</item>
+    </string-array>
+    <string name="app_name">Learn Android</string>
+    <string name="jcode_all_layouts">
+        package com.example.sample.java_codes;
+        "import com.example.sample.R;\n" +
+        "import com.example.sample.code;\n" +
+        "\n" +
+        "import androidx.appcompat.app.AppCompatActivity;\n" +
+        "\n" +
+        "import android.content.Intent;\n" +
+        "import android.os.Bundle;\n" +
+        "import android.view.View;\n" +
+        "import android.widget.Button;\n" +
+        "\n" +
+        "public class AllLayouts extends AppCompatActivity {\n" +
+        "String jcode=\"\";\n" +
+        "String xcode=\"\";\n" +
+        "    @Override\n" +
+        "    protected void onCreate(Bundle savedInstanceState) {\n" +
+        "        super.onCreate(savedInstanceState);\n" +
+        "        setContentView(R.layout.activity_all_layouts);\n" +
+        "\n" +
+        "    }\n" +
+        "    public void viewCode(View v){\n" +
+        "        String tag= v.getTag().toString();\n" +
+        "        switch (tag){\n" +
+        "            case \"java\":\n" +
+        "                Intent i1= new Intent(AllLayouts.this,code.class);\n" +
+        "                i1.putExtra(\"code\",jcode);\n" +
+        "                break;\n" +
+        "            case \"xml\" :\n" +
+        "                Intent i2= new Intent(AllLayouts.this,code.class);\n" +
+        "                i2.putExtra(\"code\",xcode);\n" +
+        "                break;\n" +
+        "        }\n" +
+        "        \n" +
+        "    }\n" +
+        "//Linear Layout\n" +
+        "//Constrain Layout\n" +
+        "//Frame Layout" +
+        "\n //Table Layout" +
+        "\n//\n
+        }
+    </string>
+    <string name="xcode_all_layouts">
+    
+</string>
+    <string name="hello_blank_fragment">this is fragment</string>
+
+
+</resources>
